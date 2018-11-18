@@ -1,0 +1,22 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?q?=5Bexample=2Ecom=5D_Correo_para_restablecer_contrase=C3=B1a?=
+From: webmaster@localhost
+To: javier.alexander335@outlook.com
+Date: Tue, 13 Nov 2018 20:34:12 -0000
+Message-ID: <154214125277.4916.5141434395322110400@DESKTOP-K9FE20O>
+
+¡Te saluda example.com!
+
+Estas recibiendo este correo electrónico porque usted u otra persona ha solicitado una contraseña para su cuenta de usuario.
+Se puede ignorar de forma segura si no solicitó un restablecimiento de contraseña. Haga clic en el siguiente enlace para restablecer su contraseña.
+
+http://127.0.0.1:8000/accounts/password/reset/key/1-519-02dceca7e73a1e2e6093/
+
+En caso de haber olvidado tu nombre de usuario, es javier.
+
+Muchas gracias por usar example.com!
+127.0.0.1
+-------------------------------------------------------------------------------

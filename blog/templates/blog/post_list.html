@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load socialaccount %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+{% block canvas %}
+{% if user.is_authenticated %}
+
+  <p style="color:white;">{{ user.username }}<a href="{% url 'logout' %}">   Logout</a></p>
+{% else %}
+  <a href="{% url 'login' %}">login</a>
+{% endif %}
+{% endblock %}
+
+{% block botom %}
+{% if user.is_authenticated %}
+
+  <p style="color:white;">{{ user.username }}<a href="{% url 'logout' %}">   Logout</a></p>
+{% else %}
+  <a href="{% url 'login' %}">login</a>
+{% endif %}
+{% endblock %}
+
+
+{% block content %}
+{% if user.is_authenticated %}
+<div>
+  <h1>Django chicas Blog</h1>
+</div>
+<br>
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<br>
+  {% for post in posts %} 
+    <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+            {{ post.img }}
+            <img src="media/{{post.img}}">
+            <a href="{% url 'post_detail' pk=post.pk %}">Conocer</a>
+        </div>
+  {% endfor %}
+{% else %}
+  <h1>Aquí van los post de los perros en adopción</h1>
+  <h3>Para poder adoptar a un perro, antes tienes que ser usuario de MyPerri.</h3>
+  {% for post in posts %} 
+    <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <img src="media/{{ post.imagen }}">
+            {{ post.imagen }}
+        </div>
+  {% endfor %}
+{% endif %}
+{% endblock %}

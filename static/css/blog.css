@@ -1,0 +1,330 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('http://soscreacionesweb.com/sites/default/files/fondo-slide-2_0.jpg');
+}
+section{
+    font-family: "Source Sans Pro", sans-serif;
+    width: 100%;
+    background-image: url('http://soscreacionesweb.com/sites/default/files/fondo-slide-2_0.jpg');
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-pegajoso{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #252525;
+    z-index: 100;
+    box-shadow: 0px 10px 20px;
+}
+
+.menu-offcanvas{
+    position: fixed;
+    width: 100%;
+    margin-top: 50px;
+    max-width: 350px;
+    min-width: 320px;
+    height: 450px;
+    transform: translate(-400px, 0);
+    transition: transform 1s ease;
+    background-color: rgba(25,25,25,0.9);
+    z-index: 100;
+    box-shadow: 2px 2px 20px #252525;
+}
+
+.content-offcanvas{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-top: 50px;
+    margin-left: 30px;
+    border: solid 1px white;
+    background-color: rgba(25,25,25,1);
+    box-shadow: 0px 0px 15px #888888;
+}
+
+.content-offcanvas ul{
+    width: 90%;
+    height: 70%;
+    padding-left: 0px;
+    margin: auto;
+    margin-top: 65px;
+    text-align: center;
+    list-style: none;
+}
+
+.content-offcanvas li{
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    margin-right: 40%;
+    text-align: center;
+}
+
+.content-offcanvas a{
+    border: solid 1px darkgreen;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.content-offcanvas a:hover{
+    border: solid 1px white;
+    box-shadow: 0px 0px 15px #888888;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.content-pegajoso{
+    width: 70%;
+    height: 48px;
+    margin: auto;
+    display: flex;
+}
+
+.content-pegajoso img{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#btn-offcanvas{
+    width: 48px;
+    float: right;
+    margin-top: 10px;
+    display: none;
+}
+
+.options-pegajoso{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.options-pegajoso a{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.options-pegajoso a:hover{
+    color: lightgray;
+}
+
+.options-pegajoso li{
+    list-style: none;
+    margin: auto;
+}
+
+#check-offcanvas{
+    display: none;
+}
+
+.container{
+    padding-top: 50px;
+}
+
+.container-fluid{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.top-menu{
+    margin: auto;
+    text-align: right;
+}
+
+.title-gal{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.title-gal h2{
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.title-gal p{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.row{
+    padding-top: 5%;
+}
+
+.box-carrusel{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.carrusel-boostrap{
+    width: 100%;
+    margin: auto;
+}
+
+.box-informacion{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 2%;
+    text-align: center;
+    color: #222222;
+}
+
+.box-informacion div{
+    width: 100%;
+    margin: auto;
+}
+
+#cel{
+    text-decoration-line: none;
+    font-family: fantasy;
+    color: #222222;
+    font-size: 25px;
+}
+
+#cel:hover{
+    padding: 5px;
+    color: #252525;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #252525;
+}
+
+.lema{
+    font-family: fantasy;
+    letter-spacing: 5px;
+}
+
+.redes-sociales i{
+    margin-left: 2%;
+    font-size: 30px;
+    color: #222222;
+}
+
+.redes-sociales i:hover{
+    padding: 5px;
+    color: #252525;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #252525;
+}
+
+.box-nosotros{
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 90%;
+}
+
+
+.box-nosotros h3{
+    font-size: 40px;
+    font-family: fantasy;
+    color: #222222;
+    letter-spacing: 3px;
+}
+
+#quiensoy{
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+    color: #222222;
+}
+
+.title-django{
+    font-family: cursive;
+    color: black;
+    text-decoration: none;
+}
+
+.title-django:hover{
+    font-family: cursive;
+    color: lightgray;
+    text-decoration: none;
+}
+
+.bor-imag img{
+    width: 100%;
+}
+
+.thumbnail{
+    height: 390;
+}
+
+.comment{
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.post{
+    height: all;
+}
+
+.background-form{
+    width: 100%;
+    height: 100%;
+}
+
+.form{
+    width: 100%;
+}
+
+.form h2{
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    border-bottom: solid 3px #252525;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #252525;
+}
+
+@media (max-width: 800px){
+
+    .options-pegajoso{
+        display: none;
+    }
+
+    #btn-offcanvas{
+        display: block;
+        cursor: pointer;
+    }
+
+    #logo-tienda{
+        margin:auto;
+        margin-left: 0px;
+    }
+
+    #check-offcanvas:checked ~ .menu-offcanvas{
+        transform: translate(0px, 0);
+    }
+    .box-informacion{
+        display: inline-block;
+        text-align: center;
+    } 
+}

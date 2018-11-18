@@ -1,0 +1,57 @@
+{% load staticfiles %}
+<!-- templates/base.html -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}My Perri{% endblock %}</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  {% block css %}{% endblock %}
+</head>
+<body>
+  <header>
+            <input type="checkbox" name="checkbox" id="check-offcanvas">
+            <nav class="menu-pegajoso">
+                <div class="content-pegajoso">
+                    <img src="{% static 'img/logo.png' %}" id="logo-tienda" alt="logo-tienda">
+                    <ul class="options-pegajoso">
+                        <li><a href="{% url 'home' %}">NOSOTROS</a></li>
+                        <li><a href="{% url 'post_list' %}">ADOPTA</a></li>
+                        <li><a href="">CONTACTO</a></li>
+                        <li>{% block canvas %}{% endblock %}</li>
+                    </ul>
+                    <label for="check-offcanvas"><img src="{% static 'img/menu.svg' %}" id="btn-offcanvas" alt="boton-menu"></label>
+                </div>
+            </nav>
+            <nav class="menu-offcanvas">
+                <div class="content-offcanvas">
+                    <ul>
+                        <li><a href="{% url 'home' %}" id="item1">NOSOTROS</a></li>
+                        <li><a href="{% url 'post_list' %}" id="item2">ADOPTA</a></li>
+                        <li><a href="" id="item3">CONTACTO</a></li>
+                        <li>{% block botom %}{% endblock %}</li>
+                    </ul>
+                </div>
+            </nav>
+  </header>
+  <main>
+      <div class="container-fluid">
+            {% block content %}
+            {% endblock %}
+      </div>
+  </main>
+  <footer>
+            <div class="container-fluid">
+                <p>Copyright © 2018 MyPerri. Todos los derechos reservados.</p>
+            </div>
+  </footer>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
