@@ -1,14 +1,16 @@
 {% load staticfiles %}
-<!-- templates/base.html -->
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{% block title %}My Perri{% endblock %}</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  <link rel="icon" href="{% static 'img/favicon.ico' %}" />
+  <link rel="manifest" href="/manifest.json">
   {% block css %}{% endblock %}
 </head>
 <body>
@@ -44,14 +46,16 @@
       </div>
   </main>
   <footer>
-            <div class="container-fluid">
-                <p>Copyright © 2018 MyPerri. Todos los derechos reservados.</p>
-            </div>
+      <div class="container">
+        <p>Copyright © 2018 MyPerri. Todos los derechos reservados.</p>
+      </div>
   </footer>
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="{% static 'js/app.js' %}"></script>
 </body>
 </html>

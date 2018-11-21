@@ -4,6 +4,7 @@
 
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link rel="stylesheet" href="{% static 'css/load.css' %}">
 {% endblock %}
 
 {% block canvas %}
@@ -46,18 +47,14 @@
         </div>
   {% endfor %}
 {% else %}
-  <h1>Aquí van los post de los perros en adopción</h1>
-  <h3>Para poder adoptar a un perro, antes tienes que ser usuario de MyPerri.</h3>
-  {% for post in posts %} 
-    <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-            <img src="media/{{ post.imagen }}">
-            {{ post.imagen }}
-        </div>
-  {% endfor %}
+  <div class="container-load">
+    <div class="loader">
+      <h1>Aquí van los post de los perros en adopción</h1>
+      <h3>Para poder adoptar a un perro, antes tienes que ser usuario de MyPerri.</h3>
+      <svg viewBox="0 0 32 32" width="32" height="32">
+        <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+      </svg>
+    </div>
+  </div>
 {% endif %}
 {% endblock %}

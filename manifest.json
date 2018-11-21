@@ -1,0 +1,29 @@
+{
+    " nombre " : " My Perri " ,
+    " short_name " : " My Perri " ,
+    " iconos " : [{
+      " src " : " static / img / icons / dog128.png " ,
+        " tamaños " : " 128x128 " ,
+        " tipo " : " imagen / png "
+      }, {
+        " src " : " static / img / icons / dog144.png " ,
+        " tamaños " : " 144x144 " ,
+        " tipo " : " imagen / png "
+      }, {
+        " src " : " static / img / icons / dog152.png " ,
+        " tamaños " : " 152x152 " ,
+        " tipo " : " imagen / png "
+      }, {
+        " src " : " static / img / icons / dog192.png " ,
+        " tamaños " : " 192x192 " ,
+        " tipo " : " imagen / png "
+      }, {
+        " src " : " static / img / icons / dog256.png " ,
+        " tamaños " : " 256x256 " ,
+        " tipo " : " imagen / png "
+      }],
+    " start_url " : " templates/index.html " ,
+    " display " : " standalone " ,
+    " background_color " : " # 252525 " ,
+    " theme_color " : " # 252525 "
+  }

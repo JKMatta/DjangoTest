@@ -77,7 +77,7 @@ TEMPLATES = [
 
 # Static files (CSS, JavaScript, Images)
 STATICFILES_DIRS = [
-    os.path.join (BASE_DIR, 'static'),
+   os.path.join (BASE_DIR, 'static'),
 ]
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
@@ -135,6 +135,12 @@ AUTHENTICATION_BACKENDS = (
 )
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/home/khakov/django/static/',
+]
 
 SITE_ID = 1
 
